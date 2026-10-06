@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Reservation - May's Restaurant</title>
+    </head>
+    <body>
+        <header>
+            <h1>May's Restaurant</h1>
+            <img src="Fine dining.jpg" alt="May's Restaurant" width="600" height="400">
+            <p>Book a seat with us today.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="reservation">
+                <h2>Make a Reservation</h2>
+                <form action="submit_reservation.php" method="post">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="First name and last name">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+
+                    <div>
+                        <p>Special Dietary Needs:</p>
+                        <label for="needs">None</label>
+                        <input type="checkbox" id="needs" name="needs">
+
+                        <label for="needs">Gluten-free</label>
+                        <input type="checkbox" id="needs" name="needs">
+
+                        <label for="Vegetarians">Vegetarian</label>
+                        <input type="checkbox" id="Vegetarians" name="Vegetarians">
+
+                        <label for="needs">Vegan</label>
+                        <input type="checkbox" id="needs" name="needs">
+
+                        <label for="needs">Nut Allergy</label>
+                        <input type="checkbox" id="needs" name="needs">
+                    </div>
+
+                    <div>
+                        <p>Seating preference</p>
+                        <label for="needs">Indoor</label>
+                        <input type="radio" id="needs" name="needs">
+
+                        <label for="needs">Outdoor</label>
+                        <input type="radio" id="needs" name="needs">
+
+                        <label for="needs">Bar</label>
+                        <input type="radio" id="needs" name="needs">
+                    </div>
+
+                    <div>
+                        <p>Occasion</p>
+                        <select name="occasion" id="occasion" required>
+                            <option value="" disabled selected>Select Occasion</option>
+                            <optgroup label="Personal">
+                                <option value="birthday">Birthday</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="marriage">Marriage Proposal</option>
+                            </optgroup>
+                            <optgroup label="Professional">
+                                <option value="business">Business Meeting</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    
+                    <button type="submit">Submit Reservation</button>
+                </form>
+            </section>  
+        </main>
+
+        <hr>
+
+        <footer class="footer">
+            <address>
+                Address: 111 Ikotun Idimu road, Lagos, Nigeria
+            </address>
+            <p><a href="mailto:marynwandiogo996@gmail.com">Email Address</a></p>
+            <p><a href="tel:+09067509444">Contact Us</a></p>
+        </footer>
+    </body>
+</html>
