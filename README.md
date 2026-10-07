@@ -141,14 +141,6 @@ Use the links at the top of each page to move between Home, Menu, Reservation an
 - [ ] Publish the site with GitHub Pages
 
 ---
-
-## Contact
-
-**May's Restaurant**
-111 Ikotun Idimu Road, Lagos, Nigeria
-Email: marynwandiogo996@gmail.com
-Phone: 09067509444
-
 ---
 
 ## License
