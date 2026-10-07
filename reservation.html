@@ -23,7 +23,7 @@
         <main>
             <section id="reservation">
                 <h2>Make a Reservation</h2>
-                <form action="submit_reservation.php" method="post">
+                <form action="submit" method="post">
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" required placeholder="First name and last name">
 
@@ -42,36 +42,21 @@
                     <label for="guests">Number of Guests:</label>
                     <input type="number" id="guests" name="guests" min="1" max="20" required>
 
+                    <fieldset>
+                        <legend>Special Dietary Needs</legend>
+                        <label><input type="checkbox" name="diet" value="none"> None</label>
+                        <label><input type="checkbox" name="diet" value="gluten-free"> Gluten-free</label>
+                        <label><input type="checkbox" name="diet" value="vegetarian"> Vegetarian</label>
+                        <label><input type="checkbox" name="diet" value="vegan"> Vegan</label>
+                        <label><input type="checkbox" name="diet" value="nut-allergy"> Nut allergy</label>
+                    </fieldset>
 
-                    <div>
-                        <p>Special Dietary Needs:</p>
-                        <label for="needs">None</label>
-                        <input type="checkbox" id="needs" name="needs">
-
-                        <label for="needs">Gluten-free</label>
-                        <input type="checkbox" id="needs" name="needs">
-
-                        <label for="Vegetarians">Vegetarian</label>
-                        <input type="checkbox" id="Vegetarians" name="Vegetarians">
-
-                        <label for="needs">Vegan</label>
-                        <input type="checkbox" id="needs" name="needs">
-
-                        <label for="needs">Nut Allergy</label>
-                        <input type="checkbox" id="needs" name="needs">
-                    </div>
-
-                    <div>
-                        <p>Seating preference</p>
-                        <label for="needs">Indoor</label>
-                        <input type="radio" id="needs" name="needs">
-
-                        <label for="needs">Outdoor</label>
-                        <input type="radio" id="needs" name="needs">
-
-                        <label for="needs">Bar</label>
-                        <input type="radio" id="needs" name="needs">
-                    </div>
+                    <fieldset>
+                        <legend>Seating preference</legend>
+                        <label><input type="radio" name="seating" value="indoor"> Indoor</label>
+                        <label><input type="radio" name="seating" value="outdoor"> Outdoor</label>
+                        <label><input type="radio" name="seating" value="bar"> Bar</label>
+                    </fieldset>
 
                     <div>
                         <p>Occasion</p>
@@ -100,7 +85,7 @@
                 Address: 111 Ikotun Idimu road, Lagos, Nigeria
             </address>
             <p><a href="mailto:marynwandiogo996@gmail.com">Email Address</a></p>
-            <p><a href="tel:+09067509444">Contact Us</a></p>
+            <p><a href="tel:+2349067509444">Contact Us</a></p>
         </footer>
     </body>
 </html>
