@@ -3,28 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
         <link rel="manifest" href="/site.webmanifest">      
         <title>May's Restaurant - Home</title>
     </head>
     <body>
-        <header>
-            <h1>Welcome to May's Restaurant</h1>
-            <img src="Fine-dining.jpg" alt="May's Restaurant" width="600" height="400">
-            <p>Experience the finest dining with our exquisite menu and exceptional service.</p>
+        <header class="header">
+            <div class="logo-box">
+                <img src="Fine-dining.jpg" alt="May's Restaurant">
+                <h1>May's Fine dining <small>(Where luxury meets taste)</small></h1>
+                <p>Experience the finest dining with our exquisite menu and exceptional service.</p>
+            </div>
         </header>
 
-        <nav>
+        <nav class="Menu">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="reservation.html">Reservation</a>
             <a href="gallery.html">Gallery</a>
         </nav>
 
-        <main>
-            <section id="hours">
+        <main class="main-content">
+            <section id="hours" class="hours">
                 <h2>Opening Hours</h2>
                 <dl>
                     <dt>Monday - Friday</dt>
@@ -36,8 +38,8 @@
 
             <section id="special">
                 <h2>Today's Special</h2>
-                <img src="Barbecue-chicken and rice.jpg" alt="Barbecuechicken with coconut rice" width="600" height="400">  
                 <p>Indulge in our chef's special creation for today: <strong>Barbecue chicken with coconut rice</strong></p>
+                <img src="Barbecue-chicken and rice.jpg" alt="Barbecuechicken with coconut rice" width="600" height="400">  
             </section>
 
             <section id="faq">
@@ -73,6 +75,5 @@
             <p><a href="tel:+2349067509444">Contact us</a></p>
             <p>&copy; 2026 May's Restaurant. All rights reserved.</p>
         </footer>
-
     </body>   
 </html>

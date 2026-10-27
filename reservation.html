@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reservation.css">
         <title>Reservation - May's Restaurant</title>
     </head>
     <body>
@@ -13,15 +13,15 @@
             <p>Book a seat with us today.</p>
         </header>
 
-        <nav>
+        <nav class="reserve-links">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
         </nav>
 
-        <main>
-            <section id="reservation">
+        <main class="reserve">
+            <section>
                 <h2>Make a Reservation</h2>
-                <form action="submit" method="post">
+                <form action="submit" method="post" class="forms">
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" required placeholder="First name and last name">
 
@@ -71,13 +71,11 @@
                         </select>
                     </div>
                     
-                    <button type="submit">Submit Reservation</button>
+                    <button type="submit" class="bttn">Submit Reservation</button>
                 </form>
             </section>  
         </main>
-
         <hr>
-
         <footer class="footer">
             <address>
                 Address: 111 Ikotun Idimu road, Lagos, Nigeria
@@ -85,7 +83,6 @@
             <p><a href="mailto:marynwandiogo996@gmail.com">Email Address</a></p>
             <p><a href="tel:+2349067509444">Contact Us</a></p>
             <p>&copy; 2026 May's Restaurant. All rights reserved.</p>
-
         </footer>
     </body>
 </html>
